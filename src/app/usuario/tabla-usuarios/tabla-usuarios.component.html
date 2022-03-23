@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>{{ title }}</h1>
+    <div class="row">
+        <div class="col">
+            <div class="card table-responsive">
+                <table class="table">
+                    <thead>
+                        <th>Nombre de Usuario</th>
+                        <th>Fecha de Nacimiento</th>
+                        <th>Edad</th>
+                        <th>Dirección</th>
+                    </thead>
+                    <tbody *ngFor="let usuario of usuarios">
+                        <td>{{ usuario.name }}</td>
+                        <td>{{ usuario.fecha_nacimiento }}</td>
+                        <td>{{ usuario.edad }}</td>
+                        <td>{{ usuario.domicilio }} {{ usuario.numero_exterior }} {{ usuario.colonia }} {{ usuario.cp }} {{ usuario.ciudad }} </td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
